@@ -1,20 +1,26 @@
 {
-  "name": "url-blacklist",
+  "name": "url-black-list",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "private": false,  
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "ts-mocha test/index.ts",
+    "build": "tsc",
+    "prepublishOnly": "yarn build"
   },
   "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "@types/mocha": "^5.2.7",
-    "@types/node-fetch": "^2.5.2",
-    "@types/punycode": "^2.1.0",
+  "license": "MIT",
+  "dependencies": {        
+    "@types/punycode": "^2.1.0",    
+    "punycode": "^2.1.1"
+  },
+  "devDependencies": {
+    "@types/node-fetch": "^2.5.2",  
+    "@types/mocha": "^5.2.7",  
+    "ts-mocha": "^6.0.0",
+    "typescript": "^3.6.3",
     "mocha": "^6.2.0",
-    "node-fetch": "^2.6.0",
-    "punycode": "^2.1.1",
-    "ts-mocha": "^6.0.0"
+    "node-fetch": "^2.6.0"
   }
 }
