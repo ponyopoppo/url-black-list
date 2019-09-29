@@ -1,5 +1,5 @@
 import { equal } from 'assert';
-import { URLBlackList } from '../index';
+import { URLBlackList } from '../dist';
 
 describe('convert', () => {
     it('should convert correctly', () => {
