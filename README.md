@@ -19,11 +19,13 @@ import { URLBlackList } from 'url-black-list';
 const blackList = new URLBlackList();
 blackList.add('example.com');
 blackList.add('𝒜𝒜𝒜𝒜');
+blackList.add('あいうえお.com');
 
 blackList.isValidText('example.com'); // false
 blackList.isValidText('ℰ𝓍𝒜m𝓅le.𝒞ℴ𝓂'); // false
 blackList.isValidText('aaaa'); // false
 blackList.isValidText('AAAA'); // false
+blackList.isValidText('xn--l8jegik.com'); // false (This is punycode of あいうえお)
 
 blackList.isValidText('valid.domain.com'); // true
 ```
