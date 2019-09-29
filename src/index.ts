@@ -1,4 +1,5 @@
 import * as fs from 'fs';
+import * as path from 'path';
 import * as punycode from 'punycode';
 
 export class URLBlackList {
@@ -6,7 +7,9 @@ export class URLBlackList {
     blackList: string[];
     constructor() {
         this.idnaMap = JSON.parse(
-            fs.readFileSync('./data/idna2008_map.json').toString()
+            fs
+                .readFileSync(path.join(__dirname, '../data/idna2008_map.json'))
+                .toString()
         );
         this.blackList = [];
     }
