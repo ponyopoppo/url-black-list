@@ -1,13 +1,14 @@
 {
   "name": "url-black-list",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "",
   "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "private": false,  
   "scripts": {
     "test": "ts-mocha test/index.ts",
     "build": "tsc",
-    "prepublishOnly": "yarn build"
+    "prepublishOnly": "rm -rf dist && rm -rf node_modules && yarn && yarn build"
   },
   "author": "",
   "license": "MIT",
