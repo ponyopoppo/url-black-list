@@ -10,9 +10,9 @@ punycode@^2.1.1:
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/punycode/-/punycode-2.1.1.tgz#b58b010ac40c22c5657616c8d2c2c02c7bf479ec"
 
-url-black-list@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/url-black-list/-/url-black-list-1.0.1.tgz#1cc2765cefce41cb0c9ca3ff86bb6f45092e98f1"
+url-black-list@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/url-black-list/-/url-black-list-1.0.3.tgz#ad89d93611fc1a8a9e5afba83cd390397d87028d"
   dependencies:
     "@types/punycode" "^2.1.0"
     punycode "^2.1.1"
